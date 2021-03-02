@@ -1,0 +1,64 @@
+#include <stdio.h>
+
+
+main(int argc, char** argv) { if(argc < 2 )
+{
+printf("At least one argument required"); printf("%s filename",argv[0]);
+return;
+}
+FILE *fp;
+char buff[1255];
+
+fp = fopen(argv[1], "r");
+fscanf(fp, "%s", buff);
+printf("1 : %s\n", buff ); fclose(fp);
+}
+
+
+
+
+printf
+Prints to screen
+
+
+fprintf
+To file
+
+
+scanf
+From keyboard
+
+
+fscanf
+From file
+
+
+puts
+Un formatted output
+
+
+fputs
+Un formatted file
+
+
+gets
+Read un formatted
+
+
+fgets
+Read un formatted from file
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
